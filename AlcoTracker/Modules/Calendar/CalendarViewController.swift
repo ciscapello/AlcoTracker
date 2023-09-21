@@ -1,4 +1,4 @@
-// 
+//
 //  CalendarViewController.swift
 //  AlcoTracker
 //
@@ -7,15 +7,12 @@
 
 import UIKit
 
-protocol CalendarViewControllerProtocol: AnyObject {
-    
-}
+protocol CalendarViewControllerProtocol: AnyObject {}
 
 final class CalendarViewController: UIViewController, CalendarViewControllerProtocol {
-    
     public var presenter: CalendarPresenterProtocol!
-    
-    override public func viewDidLoad() -> () {
+
+    override public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = R.color.background()
     }

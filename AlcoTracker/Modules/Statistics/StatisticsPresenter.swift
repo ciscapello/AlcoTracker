@@ -1,4 +1,4 @@
-// 
+//
 //  StatisticsPresenter.swift
 //  AlcoTracker
 //
@@ -12,9 +12,8 @@ protocol StatisticsPresenterProtocol: AnyObject {
 }
 
 final class StatisticsPresenter: StatisticsPresenterProtocol {
-    
     private weak var view: StatisticsViewControllerProtocol?
-    
+
     init(view: StatisticsViewControllerProtocol) {
         self.view = view
     }

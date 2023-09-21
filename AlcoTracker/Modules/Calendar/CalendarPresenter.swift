@@ -1,4 +1,4 @@
-// 
+//
 //  CalendarPresenter.swift
 //  AlcoTracker
 //
@@ -12,9 +12,8 @@ protocol CalendarPresenterProtocol: AnyObject {
 }
 
 final class CalendarPresenter: CalendarPresenterProtocol {
-    
     private weak var view: CalendarViewControllerProtocol?
-    
+
     init(view: CalendarViewControllerProtocol) {
         self.view = view
     }

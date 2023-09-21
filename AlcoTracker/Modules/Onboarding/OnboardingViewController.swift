@@ -1,37 +1,34 @@
-// 
+//
 //  OnboardingViewController.swift
 //  AlcoTracker
 //
 //  Created by Владимир on 03.09.2023.
 //
 
-import UIKit
-import SnapKit
 import RxCocoa
 import RxSwift
+import SnapKit
+import UIKit
 
-protocol OnboardingViewControllerProtocol: AnyObject {
-    
-}
+protocol OnboardingViewControllerProtocol: AnyObject {}
 
 final class OnboardingViewController: UIViewController, OnboardingViewControllerProtocol {
-    
     public var presenter: OnboardingPresenterProtocol!
-    var index = 0;
-    
+    var index = 0
+
     var pageController: OnboardingPageViewController?
     let button = UIButton(type: .system)
 
-    override public func viewDidLoad() -> () {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = R.color.background()
-        
+
         button.setTitle("Далее", for: .normal)
         button.titleLabel?.font = UIFont(name: "Mulish-Bold", size: 16)
         button.tintColor = .white
         button.backgroundColor = .blue
         view.addSubview(button)
-        
+
         button.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
         button.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-50)
@@ -40,16 +37,14 @@ final class OnboardingViewController: UIViewController, OnboardingViewController
             make.height.equalTo(60)
         }
         button.layer.cornerRadius = 10
-        
+
         configurePageController()
-        
-        
     }
-    
+
     private func configurePageController() {
         pageController = OnboardingPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
         guard let pageController else { return }
-        self.addChild(pageController)
+        addChild(pageController)
         pageController.didMove(toParent: self)
         view.addSubview(pageController.view)
         pageController.view.snp.makeConstraints { make in
@@ -58,16 +53,14 @@ final class OnboardingViewController: UIViewController, OnboardingViewController
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
         }
     }
-    
-    @objc func buttonTapped(sender: UIButton) {
+
+    @objc func buttonTapped(sender _: UIButton) {
         guard let pageController else { return }
-        
+
         if pageController.pageControl.currentPage == pageController.pages.count - 1 {
             presenter.buttonDidTapped()
         }
 
         pageController.goToNextPage(pageControl: pageController.pageControl)
     }
-    
 }
-

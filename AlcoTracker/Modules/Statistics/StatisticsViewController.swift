@@ -1,4 +1,4 @@
-// 
+//
 //  StatisticsViewController.swift
 //  AlcoTracker
 //
@@ -7,15 +7,12 @@
 
 import UIKit
 
-protocol StatisticsViewControllerProtocol: AnyObject {
-    
-}
+protocol StatisticsViewControllerProtocol: AnyObject {}
 
 final class StatisticsViewController: UIViewController, StatisticsViewControllerProtocol {
-    
     public var presenter: StatisticsPresenterProtocol!
-    
-    override public func viewDidLoad() -> () {
+
+    override public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = R.color.background()
     }

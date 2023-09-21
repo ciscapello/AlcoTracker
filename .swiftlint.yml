@@ -1,0 +1,14 @@
+included:
+  - AlcoTracker
+
+excluded:
+  - Pods
+  - "*.generated.swift"
+  - AlcoTracker/R.generated.swift
+
+disabled_rules:
+  - force_try
+  - force_cast
+  - trailing_whitespace
+  - line_length
+  - trailing_comma

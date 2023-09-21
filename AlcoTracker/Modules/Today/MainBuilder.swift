@@ -1,4 +1,4 @@
-// 
+//
 //  MainBuilder.swift
 //  AlcoTracker
 //
@@ -8,8 +8,5 @@
 import UIKit
 
 final class MainBuilder {
-    
-    public static func build() -> MainViewController {
-    }
-    
+    public static func build() -> MainViewController {}
 }

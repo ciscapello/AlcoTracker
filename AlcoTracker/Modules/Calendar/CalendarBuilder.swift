@@ -1,4 +1,4 @@
-// 
+//
 //  CalendarBuilder.swift
 //  AlcoTracker
 //
@@ -7,6 +7,4 @@
 
 import UIKit
 
-final class CalendarBuilder {
-    
-}
+final class CalendarBuilder {}

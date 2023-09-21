@@ -1,4 +1,4 @@
-// 
+//
 //  OnboardingPresenter.swift
 //  AlcoTracker
 //
@@ -13,18 +13,21 @@ protocol OnboardingPresenterProtocol: AnyObject {
 }
 
 final class OnboardingPresenter: OnboardingPresenterProtocol {
-    
     private weak var view: OnboardingViewControllerProtocol?
     private var router: RouterProtocol?
-    
+
     init(view: OnboardingViewControllerProtocol, router: RouterProtocol) {
         self.view = view
         self.router = router
     }
-    
+
+    private func setUserDefaults() {
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: Constants.shared.userDefaultOnboaringKey)
+    }
+
     func buttonDidTapped() {
         router?.showTabNavigator()
-        let defaults = UserDefaults.standard
-        defaults.set(true, forKey: userDefaultOnboaringKey)
+        setUserDefaults()
     }
 }
