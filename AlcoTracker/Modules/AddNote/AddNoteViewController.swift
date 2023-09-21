@@ -21,7 +21,7 @@ extension Section: AnimatableSectionModelType {
     typealias Item = Drink
 
     var identity: String {
-        return header
+        header
     }
 
     init(original: Section, items: [Item]) {
@@ -71,7 +71,7 @@ final class AddNoteViewController: UIViewController, AddNoteViewControllerProtoc
             sectionHeader.setup(title: section.header, forCustomSection: indexPath.section == 0)
             sectionHeader.button.rx.tap.bind { [weak self] in
                 guard let self else { return }
-                self.onHeaderButtonPress()
+                onHeaderButtonPress()
             }.disposed(by: bag)
 
             return sectionHeader
@@ -119,7 +119,7 @@ extension AddNoteViewController: UICollectionViewDelegate {
         let deleteCancel = UIAction(title: "Отмена", image: UIImage(systemName: "xmark")) { _ in }
         let deleteConfirmation = UIAction(title: "Да, удалить", image: UIImage(systemName: "checkmark"), attributes: .destructive) { [weak self] _ in
             guard let self else { return }
-            self.presenter.onDeleteDrinkItemByIndexPath(indexPaths.first!)
+            presenter.onDeleteDrinkItemByIndexPath(indexPaths.first!)
         }
         let delete = UIMenu(title: "Удалить", image: UIImage(systemName: "trash"), options: .destructive, children: [deleteCancel, deleteConfirmation])
         let mainMenu = UIMenu(title: "", children: [delete])

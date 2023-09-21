@@ -650,6 +650,7 @@
 		};
 		E7543E452ABC961500F867D0 /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -668,6 +669,7 @@
 		};
 		E7543E462ABC9BA800F867D0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

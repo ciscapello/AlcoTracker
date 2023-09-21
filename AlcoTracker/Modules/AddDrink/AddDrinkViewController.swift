@@ -96,14 +96,14 @@ final class AddDrinkViewController: UIViewController, AddDrinkViewControllerProt
     private func binding() {
         nameField.rx.controlEvent([.editingDidBegin]).asObservable().subscribe { [weak self] _ in
             guard let self else { return }
-            self.nameField.layer.borderColor = UIColor.black.cgColor
-            self.nameField.layer.borderWidth = 1
+            nameField.layer.borderColor = UIColor.black.cgColor
+            nameField.layer.borderWidth = 1
         }.disposed(by: bag)
 
         nameField.rx.controlEvent([.editingDidEnd]).asObservable().subscribe { [weak self] _ in
             guard let self else { return }
-            self.nameField.layer.borderColor = .none
-            self.nameField.layer.borderWidth = 0
+            nameField.layer.borderColor = .none
+            nameField.layer.borderWidth = 0
         }.disposed(by: bag)
 
         imageControl.selectedImage.bind(to: presenter.drinkImage).disposed(by: bag)
@@ -111,18 +111,18 @@ final class AddDrinkViewController: UIViewController, AddDrinkViewControllerProt
 
         Observable.combineLatest(nameField.rx.text.orEmpty, imageControl.selectedImage).bind { [weak self] name, image in
             guard let self else { return }
-            if !name.isEmpty && !image.isEmpty {
-                self.button.isEnabled = true
-                self.button.alpha = 1
+            if !name.isEmpty, !image.isEmpty {
+                button.isEnabled = true
+                button.alpha = 1
             } else {
-                self.button.isEnabled = false
-                self.button.alpha = 0.8
+                button.isEnabled = false
+                button.alpha = 0.8
             }
         }.disposed(by: bag)
 
         button.rx.tap.bind { [weak self] in
             guard let self else { return }
-            self.presenter.saveButtonDidPressed()
+            presenter.saveButtonDidPressed()
         }.disposed(by: bag)
     }
 }

@@ -24,7 +24,7 @@ class Drink: Object {
 
 extension Drink: IdentifiableType {
     var identity: String {
-        return isInvalidated ? "deleted-object-\(UUID().uuidString)" : id
+        isInvalidated ? "deleted-object-\(UUID().uuidString)" : id
     }
 
     typealias Identity = String

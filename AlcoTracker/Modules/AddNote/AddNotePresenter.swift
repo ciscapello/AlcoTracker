@@ -31,7 +31,7 @@ final class AddNotePresenter: AddNotePresenterProtocol {
     private var currentDrinkValues: [Drink] = []
 
     var sections: Observable<[Section]> {
-        return Observable.array(from: realm.objects(Drink.self)).map { results in
+        Observable.array(from: realm.objects(Drink.self)).map { results in
             let customDrinks = results
             let originalDrinks = MockDrinks.shared.returnDrinks()
             self.currentDrinkValues = customDrinks
