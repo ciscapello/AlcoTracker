@@ -13,35 +13,36 @@ import RxRelay
 import RxSwift
 
 protocol AddNotePresenterProtocol: AnyObject {
-    init(view: AddNoteViewControllerProtocol, router: RouterProtocol)
+    init(view: AddNoteViewControllerProtocol, router: RouterProtocol, noteService: NoteServiceProtocol)
     var sections: Observable<[Section]> { get }
     func headerButtonDidPressed()
     func onDeleteDrinkItemByIndexPath(_ indexPath: IndexPath)
+    func itemDidSelected(with drink: Drink)
 }
 
 final class AddNotePresenter: AddNotePresenterProtocol {
     private weak var view: AddNoteViewControllerProtocol?
+    private var noteService: NoteServiceProtocol
 
     let bag = DisposeBag()
-
-    var router: RouterProtocol
-
     let realm = try! Realm()
+    var router: RouterProtocol
 
     private var currentDrinkValues: [Drink] = []
 
     var sections: Observable<[Section]> {
         Observable.array(from: realm.objects(Drink.self)).map { results in
-            let customDrinks = results
+            let customDrinks = results.filter(\.isCustom)
             let originalDrinks = MockDrinks.shared.returnDrinks()
             self.currentDrinkValues = customDrinks
             return [Section(header: "Ваши напитки", items: customDrinks), Section(header: "Выбрать из списка", items: originalDrinks)]
         }
     }
 
-    init(view: AddNoteViewControllerProtocol, router: RouterProtocol) {
+    init(view: AddNoteViewControllerProtocol, router: RouterProtocol, noteService: NoteServiceProtocol) {
         self.view = view
         self.router = router
+        self.noteService = noteService
     }
 
     func headerButtonDidPressed() {
@@ -57,5 +58,10 @@ final class AddNotePresenter: AddNotePresenterProtocol {
         try! realm.write {
             realm.delete(drink)
         }
+    }
+
+    func itemDidSelected(with drink: Drink) {
+        noteService.addToNotes(drink: drink)
+        router.popViewController()
     }
 }

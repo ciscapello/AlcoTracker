@@ -12,24 +12,6 @@ import UIKit
 
 protocol AddNoteViewControllerProtocol: AnyObject {}
 
-struct Section {
-    let header: String
-    var items: [Drink]
-}
-
-extension Section: AnimatableSectionModelType {
-    typealias Item = Drink
-
-    var identity: String {
-        header
-    }
-
-    init(original: Section, items: [Item]) {
-        self = original
-        self.items = items
-    }
-}
-
 final class AddNoteViewController: UIViewController, AddNoteViewControllerProtocol, UIScrollViewDelegate {
     public var presenter: AddNotePresenterProtocol!
 
@@ -79,7 +61,12 @@ final class AddNoteViewController: UIViewController, AddNoteViewControllerProtoc
 
         self.dataSource = dataSource
 
-        presenter.sections.debug("sections").bind(to: collectionView.rx.items(dataSource: dataSource)).disposed(by: bag)
+        collectionView.rx.modelSelected(Drink.self).subscribe { [weak self] event in
+            guard let drink = event.element, let self else { return }
+            presenter.itemDidSelected(with: drink)
+        }.disposed(by: bag)
+
+        presenter.sections.bind(to: collectionView.rx.items(dataSource: dataSource)).disposed(by: bag)
         collectionView.rx.setDelegate(self).disposed(by: bag)
     }
 

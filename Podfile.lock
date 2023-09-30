@@ -22,6 +22,7 @@ PODS:
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SnapKit (5.6.0)
+  - SwiftDate (5.1.0)
   - Then (3.0.0)
 
 DEPENDENCIES:
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - RxRelay (= 6.5.0)
   - RxSwift (= 6.5.0)
   - SnapKit (~> 5.6.0)
+  - SwiftDate (~> 5.0)
   - Then
 
 SPEC REPOS:
@@ -47,6 +49,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
+    - SwiftDate
     - Then
 
 SPEC CHECKSUMS:
@@ -60,8 +63,9 @@ SPEC CHECKSUMS:
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: b56e6445771f845adbc98352c44de5860adaa2ac
+PODFILE CHECKSUM: 1b0f633ab5a6eb3c515423466c2ec7101577b7f0
 
 COCOAPODS: 1.12.1

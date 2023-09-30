@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18DEA02C87FD0C27B5B6B263 /* Pods_AlcoTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C100982077F9AE38053068F /* Pods_AlcoTracker.framework */; };
-		3B4E0487803F5220863A8DCD /* Pods_AlcoTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C09212596A217544EFEA440 /* Pods_AlcoTrackerTests.framework */; };
-		5A1409ACBC6A14A9C331A845 /* Pods_AlcoTracker_AlcoTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5537140078C3898D018849B /* Pods_AlcoTracker_AlcoTrackerUITests.framework */; };
+		0C449F721B81245F5EBA704A /* Pods_AlcoTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A483EBC55D27BDFBA65E65 /* Pods_AlcoTrackerTests.framework */; };
+		2D4D4A497140BC8C53A7779D /* Pods_AlcoTracker_AlcoTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F21963397EE0E729272736C /* Pods_AlcoTracker_AlcoTrackerUITests.framework */; };
+		A64D86494DB3D692A55A8215 /* Pods_AlcoTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65531BD5118EB156E9487713 /* Pods_AlcoTracker.framework */; };
+		E70931232ABDE51A0094BD15 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70931222ABDE5190094BD15 /* Section.swift */; };
+		E717EA132AC70E430017A9D8 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E717EA122AC70E430017A9D8 /* NoteService.swift */; };
 		E724E2F92AA46296009A8B4B /* OnboardingPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724E2F82AA46296009A8B4B /* OnboardingPageContentViewController.swift */; };
 		E724E2FC2AA4636E009A8B4B /* PageViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724E2FB2AA4636E009A8B4B /* PageViewContent.swift */; };
 		E724E2FF2AA4761E009A8B4B /* UIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724E2FE2AA4761E009A8B4B /* UIPageViewController.swift */; };
 		E724E3012AA47D13009A8B4B /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724E3002AA47D13009A8B4B /* OnboardingPageViewController.swift */; };
+		E7293D922ABDE7E000CAA6BC /* TodayHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7293D912ABDE7E000CAA6BC /* TodayHeaderReusableView.swift */; };
 		E73504872AB815AA0019376F /* AddDrinkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73504842AB815AA0019376F /* AddDrinkPresenter.swift */; };
 		E73504882AB815AA0019376F /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73504852AB815AA0019376F /* AddDrinkViewController.swift */; };
 		E740EA902AB975B900B9B194 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740EA8F2AB975B900B9B194 /* Note.swift */; };
@@ -40,6 +43,7 @@
 		E771D1092AA6F6D50024D394 /* BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771D1082AA6F6D50024D394 /* BuilderTests.swift */; };
 		E77788852AA6335D006DEC33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77788842AA6335D006DEC33 /* Constants.swift */; };
 		E77788892AA636FA006DEC33 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77788882AA636FA006DEC33 /* RouterTests.swift */; };
+		E780B1132ABF2C460006910B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E780B1122ABF2C450006910B /* Date.swift */; };
 		E78291212AA3750700AE9BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78291202AA3750700AE9BEE /* AppDelegate.swift */; };
 		E78291232AA3750700AE9BEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78291222AA3750700AE9BEE /* SceneDelegate.swift */; };
 		E782912A2AA3750800AE9BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78291292AA3750800AE9BEE /* Assets.xcassets */; };
@@ -57,11 +61,15 @@
 		E7A944CD2AA37DA4004DF4BA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A944CA2AA37DA4004DF4BA /* CalendarViewController.swift */; };
 		E7A944D32AA37E04004DF4BA /* StatisticsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A944D02AA37E04004DF4BA /* StatisticsPresenter.swift */; };
 		E7A944D42AA37E04004DF4BA /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A944D12AA37E04004DF4BA /* StatisticsViewController.swift */; };
+		E7D22D242ABDCF4F004974D2 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D22D232ABDCF4F004974D2 /* NoteCollectionViewCell.swift */; };
 		E7D6E5A12AA7646600ACD0EA /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6E5A02AA7646500ACD0EA /* UIButton.swift */; };
 		E7D778352AB828230054544F /* UITextField+padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D778342AB828230054544F /* UITextField+padding.swift */; };
 		E7E5190E2AB4081900BA56DF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E5190D2AB4081900BA56DF /* R.generated.swift */; };
 		E7E519112AB4092C00BA56DF /* MockDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E519102AB4092C00BA56DF /* MockDrinks.swift */; };
 		E7E519132AB4285900BA56DF /* DrinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E519122AB4285900BA56DF /* DrinkCollectionViewCell.swift */; };
+		E7F1584E2AC8205A000ABF4D /* StepperModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1584B2AC8205A000ABF4D /* StepperModulePresenter.swift */; };
+		E7F1584F2AC8205A000ABF4D /* StepperModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1584C2AC8205A000ABF4D /* StepperModuleViewController.swift */; };
+		E7F158502AC8205A000ABF4D /* StepperModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1584D2AC8205A000ABF4D /* StepperModuleBuilder.swift */; };
 		E7F78D842AA454EC00081E43 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F78D812AA454EC00081E43 /* OnboardingPresenter.swift */; };
 		E7F78D852AA454EC00081E43 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F78D822AA454EC00081E43 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -84,19 +92,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B41BB2A569995ADA6C96C5F /* Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3F14CC52B8BB46E67B794871 /* Pods-AlcoTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-AlcoTrackerTests/Pods-AlcoTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		471A26CCE1526FC86B27A1DC /* Pods-AlcoTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-AlcoTrackerTests/Pods-AlcoTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
-		4C100982077F9AE38053068F /* Pods_AlcoTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		511861DDCF232FB6CFD8EF26 /* Pods-AlcoTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker.release.xcconfig"; path = "Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker.release.xcconfig"; sourceTree = "<group>"; };
-		6C09212596A217544EFEA440 /* Pods_AlcoTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F11E303E96B1C0D76F12BEE /* Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		97C768052D0999BB92CEFA54 /* Pods-AlcoTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker.debug.xcconfig"; path = "Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker.debug.xcconfig"; sourceTree = "<group>"; };
-		B5537140078C3898D018849B /* Pods_AlcoTracker_AlcoTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTracker_AlcoTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7C806A2E17C1E9BE26B2F1 /* Pods-AlcoTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker.release.xcconfig"; path = "Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker.release.xcconfig"; sourceTree = "<group>"; };
+		17E87A94352C0FEB8CF89CFA /* Pods-AlcoTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker.debug.xcconfig"; path = "Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		1DCC528458BB64AA96E10CDF /* Pods-AlcoTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-AlcoTrackerTests/Pods-AlcoTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FEF85F34BCB166D8EA193AE /* Pods-AlcoTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-AlcoTrackerTests/Pods-AlcoTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65531BD5118EB156E9487713 /* Pods_AlcoTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B2156111B5E888F53C5133 /* Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77A483EBC55D27BDFBA65E65 /* Pods_AlcoTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F21963397EE0E729272736C /* Pods_AlcoTracker_AlcoTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTracker_AlcoTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70931222ABDE5190094BD15 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		E717EA122AC70E430017A9D8 /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
 		E724E2F82AA46296009A8B4B /* OnboardingPageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageContentViewController.swift; sourceTree = "<group>"; };
 		E724E2FB2AA4636E009A8B4B /* PageViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewContent.swift; sourceTree = "<group>"; };
 		E724E2FE2AA4761E009A8B4B /* UIPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewController.swift; sourceTree = "<group>"; };
 		E724E3002AA47D13009A8B4B /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		E7293D912ABDE7E000CAA6BC /* TodayHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeaderReusableView.swift; sourceTree = "<group>"; };
 		E73504842AB815AA0019376F /* AddDrinkPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkPresenter.swift; sourceTree = "<group>"; };
 		E73504852AB815AA0019376F /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
 		E740EA8F2AB975B900B9B194 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -123,6 +133,7 @@
 		E771D1082AA6F6D50024D394 /* BuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderTests.swift; sourceTree = "<group>"; };
 		E77788842AA6335D006DEC33 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E77788882AA636FA006DEC33 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		E780B1122ABF2C450006910B /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		E782911D2AA3750700AE9BEE /* AlcoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78291202AA3750700AE9BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78291222AA3750700AE9BEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,13 +155,18 @@
 		E7A944CA2AA37DA4004DF4BA /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		E7A944D02AA37E04004DF4BA /* StatisticsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsPresenter.swift; sourceTree = "<group>"; };
 		E7A944D12AA37E04004DF4BA /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		E7D22D232ABDCF4F004974D2 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
 		E7D6E5A02AA7646500ACD0EA /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		E7D778342AB828230054544F /* UITextField+padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+padding.swift"; sourceTree = "<group>"; };
 		E7E5190D2AB4081900BA56DF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = AlcoTracker/R.generated.swift; sourceTree = "<group>"; };
 		E7E519102AB4092C00BA56DF /* MockDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDrinks.swift; sourceTree = "<group>"; };
 		E7E519122AB4285900BA56DF /* DrinkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7F1584B2AC8205A000ABF4D /* StepperModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperModulePresenter.swift; sourceTree = "<group>"; };
+		E7F1584C2AC8205A000ABF4D /* StepperModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperModuleViewController.swift; sourceTree = "<group>"; };
+		E7F1584D2AC8205A000ABF4D /* StepperModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperModuleBuilder.swift; sourceTree = "<group>"; };
 		E7F78D812AA454EC00081E43 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		E7F78D822AA454EC00081E43 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EAC7FCA2F0D3FB4EE6E45883 /* Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18DEA02C87FD0C27B5B6B263 /* Pods_AlcoTracker.framework in Frameworks */,
+				A64D86494DB3D692A55A8215 /* Pods_AlcoTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B4E0487803F5220863A8DCD /* Pods_AlcoTrackerTests.framework in Frameworks */,
+				0C449F721B81245F5EBA704A /* Pods_AlcoTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A1409ACBC6A14A9C331A845 /* Pods_AlcoTracker_AlcoTrackerUITests.framework in Frameworks */,
+				2D4D4A497140BC8C53A7779D /* Pods_AlcoTracker_AlcoTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,34 +200,45 @@
 		41F7B4711D804B3DDE6D9081 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				97C768052D0999BB92CEFA54 /* Pods-AlcoTracker.debug.xcconfig */,
-				511861DDCF232FB6CFD8EF26 /* Pods-AlcoTracker.release.xcconfig */,
-				6F11E303E96B1C0D76F12BEE /* Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig */,
-				3B41BB2A569995ADA6C96C5F /* Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig */,
-				3F14CC52B8BB46E67B794871 /* Pods-AlcoTrackerTests.debug.xcconfig */,
-				471A26CCE1526FC86B27A1DC /* Pods-AlcoTrackerTests.release.xcconfig */,
+				17E87A94352C0FEB8CF89CFA /* Pods-AlcoTracker.debug.xcconfig */,
+				0D7C806A2E17C1E9BE26B2F1 /* Pods-AlcoTracker.release.xcconfig */,
+				73B2156111B5E888F53C5133 /* Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig */,
+				EAC7FCA2F0D3FB4EE6E45883 /* Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig */,
+				3FEF85F34BCB166D8EA193AE /* Pods-AlcoTrackerTests.debug.xcconfig */,
+				1DCC528458BB64AA96E10CDF /* Pods-AlcoTrackerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CD92497DC8ACCBF3F3732DFD /* Frameworks */ = {
+		71644AA7EA135840F843A34F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C100982077F9AE38053068F /* Pods_AlcoTracker.framework */,
-				B5537140078C3898D018849B /* Pods_AlcoTracker_AlcoTrackerUITests.framework */,
-				6C09212596A217544EFEA440 /* Pods_AlcoTrackerTests.framework */,
+				65531BD5118EB156E9487713 /* Pods_AlcoTracker.framework */,
+				9F21963397EE0E729272736C /* Pods_AlcoTracker_AlcoTrackerUITests.framework */,
+				77A483EBC55D27BDFBA65E65 /* Pods_AlcoTrackerTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E717EA112AC70E300017A9D8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E717EA122AC70E430017A9D8 /* NoteService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E724E2F62AA46253009A8B4B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E7F158512AC82061000ABF4D /* Stepper */,
 				E724E2F82AA46296009A8B4B /* OnboardingPageContentViewController.swift */,
 				E724E3002AA47D13009A8B4B /* OnboardingPageViewController.swift */,
 				E7E519122AB4285900BA56DF /* DrinkCollectionViewCell.swift */,
 				E74848442AB72CA4008A064C /* SectionHeaderReusableView.swift */,
 				E76C14BE2AB89CB20029A248 /* DrinkImageControl.swift */,
+				E7D22D232ABDCF4F004974D2 /* NoteCollectionViewCell.swift */,
+				E7293D912ABDE7E000CAA6BC /* TodayHeaderReusableView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -233,6 +260,7 @@
 				E7D6E5A02AA7646500ACD0EA /* UIButton.swift */,
 				E7D778342AB828230054544F /* UITextField+padding.swift */,
 				E76C14C02AB8A4E10029A248 /* UIViewController.swift */,
+				E780B1122ABF2C450006910B /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,7 +306,7 @@
 				E78291402AA3750800AE9BEE /* AlcoTrackerUITests */,
 				E782911E2AA3750700AE9BEE /* Products */,
 				41F7B4711D804B3DDE6D9081 /* Pods */,
-				CD92497DC8ACCBF3F3732DFD /* Frameworks */,
+				71644AA7EA135840F843A34F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,19 +323,17 @@
 		E782911F2AA3750700AE9BEE /* AlcoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E7F1584A2AC81D22000ABF4D /* Core */,
+				E717EA112AC70E300017A9D8 /* Services */,
 				E7E5190F2AB4085000BA56DF /* Model */,
 				E75AF23B2AA4AD6D002A2BE0 /* fonts */,
 				E724E2FD2AA4760E009A8B4B /* Extensions */,
 				E724E2FA2AA46360009A8B4B /* Utils */,
 				E724E2F62AA46253009A8B4B /* Components */,
 				E7A944BB2AA37754004DF4BA /* Modules */,
-				E78291202AA3750700AE9BEE /* AppDelegate.swift */,
-				E78291222AA3750700AE9BEE /* SceneDelegate.swift */,
 				E78291292AA3750800AE9BEE /* Assets.xcassets */,
 				E782912B2AA3750800AE9BEE /* LaunchScreen.storyboard */,
 				E782912E2AA3750800AE9BEE /* Info.plist */,
-				E7A944C42AA37792004DF4BA /* Builder.swift */,
-				E7A944C62AA37834004DF4BA /* Router.swift */,
 			);
 			path = AlcoTracker;
 			sourceTree = "<group>";
@@ -385,8 +411,30 @@
 			children = (
 				E750372B2AADE37600C1DF44 /* Drink.swift */,
 				E740EA8F2AB975B900B9B194 /* Note.swift */,
+				E70931222ABDE5190094BD15 /* Section.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7F1584A2AC81D22000ABF4D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E78291202AA3750700AE9BEE /* AppDelegate.swift */,
+				E78291222AA3750700AE9BEE /* SceneDelegate.swift */,
+				E7A944C42AA37792004DF4BA /* Builder.swift */,
+				E7A944C62AA37834004DF4BA /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E7F158512AC82061000ABF4D /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1584B2AC8205A000ABF4D /* StepperModulePresenter.swift */,
+				E7F1584C2AC8205A000ABF4D /* StepperModuleViewController.swift */,
+				E7F1584D2AC8205A000ABF4D /* StepperModuleBuilder.swift */,
+			);
+			path = Stepper;
 			sourceTree = "<group>";
 		};
 		E7F78D7F2AA454D600081E43 /* Onboarding */ = {
@@ -405,14 +453,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E78291472AA3750800AE9BEE /* Build configuration list for PBXNativeTarget "AlcoTracker" */;
 			buildPhases = (
-				9F2F1BB8EBC795B6F4BF0C40 /* [CP] Check Pods Manifest.lock */,
+				183E818A0B57CD1F40DFFAEB /* [CP] Check Pods Manifest.lock */,
 				E78291192AA3750700AE9BEE /* Sources */,
 				E7543E452ABC961500F867D0 /* SwiftFormat */,
 				E7E269092AA39F1A00C9D63E /* RSwift */,
 				E7543E462ABC9BA800F867D0 /* SwiftLint */,
 				E782911A2AA3750700AE9BEE /* Frameworks */,
 				E782911B2AA3750700AE9BEE /* Resources */,
-				16A52189EBC16DBF7D0A85C0 /* [CP] Embed Pods Frameworks */,
+				C0FDC3183B9B067BDD74A21D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,7 +475,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E782914A2AA3750800AE9BEE /* Build configuration list for PBXNativeTarget "AlcoTrackerTests" */;
 			buildPhases = (
-				7BDC5964D01A6A3025D2A00E /* [CP] Check Pods Manifest.lock */,
+				14C6F7F266B5025DFBE72961 /* [CP] Check Pods Manifest.lock */,
 				E782912F2AA3750800AE9BEE /* Sources */,
 				E78291302AA3750800AE9BEE /* Frameworks */,
 				E78291312AA3750800AE9BEE /* Resources */,
@@ -446,11 +494,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E782914D2AA3750800AE9BEE /* Build configuration list for PBXNativeTarget "AlcoTrackerUITests" */;
 			buildPhases = (
-				507A9123693E3BB0078EC33D /* [CP] Check Pods Manifest.lock */,
+				47992531AF542E86D9282C19 /* [CP] Check Pods Manifest.lock */,
 				E78291392AA3750800AE9BEE /* Sources */,
 				E782913A2AA3750800AE9BEE /* Frameworks */,
 				E782913B2AA3750800AE9BEE /* Resources */,
-				48AC303923C6744B2773F165 /* [CP] Embed Pods Frameworks */,
+				4236C24ECDF9B8B96693DCF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,63 +596,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16A52189EBC16DBF7D0A85C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		48AC303923C6744B2773F165 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		507A9123693E3BB0078EC33D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AlcoTracker-AlcoTrackerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BDC5964D01A6A3025D2A00E /* [CP] Check Pods Manifest.lock */ = {
+		14C6F7F266B5025DFBE72961 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -626,7 +618,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F2F1BB8EBC795B6F4BF0C40 /* [CP] Check Pods Manifest.lock */ = {
+		183E818A0B57CD1F40DFFAEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -646,6 +638,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4236C24ECDF9B8B96693DCF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker-AlcoTrackerUITests/Pods-AlcoTracker-AlcoTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47992531AF542E86D9282C19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlcoTracker-AlcoTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0FDC3183B9B067BDD74A21D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlcoTracker/Pods-AlcoTracker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7543E452ABC961500F867D0 /* SwiftFormat */ = {
@@ -728,11 +776,16 @@
 				E7E5190E2AB4081900BA56DF /* R.generated.swift in Sources */,
 				E7D6E5A12AA7646600ACD0EA /* UIButton.swift in Sources */,
 				E724E2F92AA46296009A8B4B /* OnboardingPageContentViewController.swift in Sources */,
+				E70931232ABDE51A0094BD15 /* Section.swift in Sources */,
+				E780B1132ABF2C460006910B /* Date.swift in Sources */,
 				E7D778352AB828230054544F /* UITextField+padding.swift in Sources */,
 				E7F78D842AA454EC00081E43 /* OnboardingPresenter.swift in Sources */,
 				E78291232AA3750700AE9BEE /* SceneDelegate.swift in Sources */,
 				E78D92352AA98F8800A9432A /* AddNoteViewController.swift in Sources */,
 				E74848452AB72CA4008A064C /* SectionHeaderReusableView.swift in Sources */,
+				E7D22D242ABDCF4F004974D2 /* NoteCollectionViewCell.swift in Sources */,
+				E7F1584E2AC8205A000ABF4D /* StepperModulePresenter.swift in Sources */,
+				E717EA132AC70E430017A9D8 /* NoteService.swift in Sources */,
 				E7A944CD2AA37DA4004DF4BA /* CalendarViewController.swift in Sources */,
 				E750372C2AADE37600C1DF44 /* Drink.swift in Sources */,
 				E77788852AA6335D006DEC33 /* Constants.swift in Sources */,
@@ -741,7 +794,10 @@
 				E7F78D852AA454EC00081E43 /* OnboardingViewController.swift in Sources */,
 				E740EA902AB975B900B9B194 /* Note.swift in Sources */,
 				E76C14C12AB8A4E10029A248 /* UIViewController.swift in Sources */,
+				E7F1584F2AC8205A000ABF4D /* StepperModuleViewController.swift in Sources */,
+				E7293D922ABDE7E000CAA6BC /* TodayHeaderReusableView.swift in Sources */,
 				E7A944C22AA37775004DF4BA /* TodayViewController.swift in Sources */,
+				E7F158502AC8205A000ABF4D /* StepperModuleBuilder.swift in Sources */,
 				E724E3012AA47D13009A8B4B /* OnboardingPageViewController.swift in Sources */,
 				E73504872AB815AA0019376F /* AddDrinkPresenter.swift in Sources */,
 			);
@@ -909,7 +965,7 @@
 		};
 		E78291482AA3750800AE9BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97C768052D0999BB92CEFA54 /* Pods-AlcoTracker.debug.xcconfig */;
+			baseConfigurationReference = 17E87A94352C0FEB8CF89CFA /* Pods-AlcoTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -937,7 +993,7 @@
 		};
 		E78291492AA3750800AE9BEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 511861DDCF232FB6CFD8EF26 /* Pods-AlcoTracker.release.xcconfig */;
+			baseConfigurationReference = 0D7C806A2E17C1E9BE26B2F1 /* Pods-AlcoTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -965,7 +1021,7 @@
 		};
 		E782914B2AA3750800AE9BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F14CC52B8BB46E67B794871 /* Pods-AlcoTrackerTests.debug.xcconfig */;
+			baseConfigurationReference = 3FEF85F34BCB166D8EA193AE /* Pods-AlcoTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -986,7 +1042,7 @@
 		};
 		E782914C2AA3750800AE9BEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 471A26CCE1526FC86B27A1DC /* Pods-AlcoTrackerTests.release.xcconfig */;
+			baseConfigurationReference = 1DCC528458BB64AA96E10CDF /* Pods-AlcoTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1007,7 +1063,7 @@
 		};
 		E782914E2AA3750800AE9BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F11E303E96B1C0D76F12BEE /* Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig */;
+			baseConfigurationReference = 73B2156111B5E888F53C5133 /* Pods-AlcoTracker-AlcoTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1026,7 +1082,7 @@
 		};
 		E782914F2AA3750800AE9BEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B41BB2A569995ADA6C96C5F /* Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig */;
+			baseConfigurationReference = EAC7FCA2F0D3FB4EE6E45883 /* Pods-AlcoTracker-AlcoTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -11,6 +11,7 @@ import UIKit
 protocol AddDrinkViewControllerProtocol: AnyObject {
     var imageControl: ImageControl { get }
     var nameField: UITextField { get }
+    func needShowToast()
 }
 
 final class AddDrinkViewController: UIViewController, AddDrinkViewControllerProtocol {
@@ -124,5 +125,9 @@ final class AddDrinkViewController: UIViewController, AddDrinkViewControllerProt
             guard let self else { return }
             presenter.saveButtonDidPressed()
         }.disposed(by: bag)
+    }
+
+    func needShowToast() {
+        showToast(message: "Напиток с таким названием уже существует", font: R.font.mulishItalic(size: 14)!)
     }
 }

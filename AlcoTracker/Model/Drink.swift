@@ -13,12 +13,14 @@ class Drink: Object {
     @Persisted var id: String
     @Persisted var name: String
     @Persisted var image: String
+    @Persisted var isCustom: Bool
 
-    convenience init(name: String, image: String) {
+    convenience init(name: String, image: String, isCustom: Bool) {
         self.init()
         id = UUID().uuidString
         self.name = name
         self.image = image
+        self.isCustom = isCustom
     }
 }
 

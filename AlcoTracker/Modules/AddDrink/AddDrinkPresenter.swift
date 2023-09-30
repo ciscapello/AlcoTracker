@@ -32,9 +32,23 @@ final class AddDrinkPresenter: AddDrinkPresenterProtocol {
         self.router = router
     }
 
+    func checkIfDrinkExists(drinkName: String) -> Bool {
+        let objects = realm.objects(Drink.self).where { drink in
+            drink.name == drinkName
+        }
+        if objects.isEmpty {
+            return false
+        } else {
+            return true
+        }
+    }
+
     func saveButtonDidPressed() {
+        let isExists = checkIfDrinkExists(drinkName: drinkName.value)
+        if isExists { view?.needShowToast(); return }
+
         let image = try! drinkImage.value()
-        let drink = Drink(name: drinkName.value, image: image)
+        let drink = Drink(name: drinkName.value, image: image, isCustom: true)
         try! realm.write {
             realm.add(drink)
         }

@@ -14,6 +14,6 @@ final class CalendarViewController: UIViewController, CalendarViewControllerProt
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = R.color.background()
+        view.backgroundColor = UIColor.yellow
     }
 }

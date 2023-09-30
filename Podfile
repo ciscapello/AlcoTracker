@@ -15,6 +15,7 @@ target 'AlcoTracker' do
   pod 'Then'
   pod 'RealmSwift', '~>10'
   pod "RxRealm"
+  pod 'SwiftDate', '~> 5.0'
 
 
 

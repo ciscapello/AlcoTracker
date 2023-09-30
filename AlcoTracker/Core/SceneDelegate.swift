@@ -15,15 +15,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-        let navigationController = UINavigationController()
+        let noteService: NoteServiceProtocol = NoteService()
+
         let assemblyBuilder = AssemblyBuilder()
         let router = Router(
-            navigationController: navigationController,
-            assemblyBuilder: assemblyBuilder
+            assemblyBuilder: assemblyBuilder,
+            window: window,
+            noteService: noteService
         )
         router.initialViewController()
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_: UIScene) {

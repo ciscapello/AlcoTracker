@@ -8,19 +8,19 @@
 import UIKit
 
 protocol AssemblyBuilderProtocol {
-    func createTodayModule(router: RouterProtocol) -> UIViewController
+    func createTodayModule(router: RouterProtocol, noteService: NoteServiceProtocol) -> UIViewController
     func createCalendarModule(router: RouterProtocol) -> UIViewController
     func createStatisticsModule(router: RouterProtocol) -> UIViewController
-    func createTabBarModule(router: RouterProtocol) -> UITabBarController
+    func createTabBarModule(router: RouterProtocol, noteService: NoteServiceProtocol) -> UITabBarController
     func createOnboardingModule(router: RouterProtocol) -> UIViewController
-    func createAddNoteModule(router: RouterProtocol) -> UIViewController
+    func createAddNoteModule(router: RouterProtocol, noteService: NoteServiceProtocol) -> UIViewController
     func createAddDrinkModule(router: RouterProtocol) -> UIViewController
 }
 
 class AssemblyBuilder: AssemblyBuilderProtocol {
-    func createTabBarModule(router: RouterProtocol) -> UITabBarController {
+    func createTabBarModule(router: RouterProtocol, noteService: NoteServiceProtocol) -> UITabBarController {
         let tabBar = UITabBarController()
-        let mainVC = createTodayModule(router: router)
+        let mainVC = createTodayModule(router: router, noteService: noteService)
         let calendarVC = createCalendarModule(router: router)
         let statisticsVC = createStatisticsModule(router: router)
 
@@ -32,9 +32,9 @@ class AssemblyBuilder: AssemblyBuilderProtocol {
         return tabBar
     }
 
-    func createTodayModule(router: RouterProtocol) -> UIViewController {
+    func createTodayModule(router: RouterProtocol, noteService: NoteServiceProtocol) -> UIViewController {
         let view = TodayViewController()
-        let presenter = TodayPresenter(view: view, router: router)
+        let presenter = TodayPresenter(view: view, router: router, noteService: noteService)
 
         view.presenter = presenter
 
@@ -77,9 +77,9 @@ class AssemblyBuilder: AssemblyBuilderProtocol {
         return view
     }
 
-    public func createAddNoteModule(router: RouterProtocol) -> UIViewController {
+    public func createAddNoteModule(router: RouterProtocol, noteService: NoteServiceProtocol) -> UIViewController {
         let view = AddNoteViewController()
-        let presenter = AddNotePresenter(view: view, router: router)
+        let presenter = AddNotePresenter(view: view, router: router, noteService: noteService)
 
         view.presenter = presenter
 
